@@ -10,7 +10,7 @@ pagination.appendChild(text);
 const prevPage = document.getElementById('prev-page');
 const nextPage = document.getElementById('next-page');
 
-const listaPersonajes = document.getElementById('character-list');//capture el ul 
+let listaPersonajes = document.getElementById('character-list');
 
 
 const url1 = `https://rickandmortyapi.com/api/character/?page=1`;
@@ -38,21 +38,3 @@ fetch(url1)
     text.innerText = 'Error: no se ha podido cargar la pagina';
   });
   
-  
-/*obtenerChiste.addEventListener('click', () => {
-  fetch('https://v2.jokeapi.dev/joke/Programming?lang=es')
-    .then((response) => {
-      if (!response.ok) {
-        throw new Error('Su peticion no ha sido posible');
-      }
-      return response.json();
-    })
-
-    .then((data) => {
-      chiste.innerText = data.value;
-    })
-
-    .catch((error) => {
-      chiste.innerText = 'Error: no se ha podido obtener la broma';
-    });
-});*/
