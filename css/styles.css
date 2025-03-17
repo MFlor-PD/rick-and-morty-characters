@@ -72,10 +72,43 @@ table {
   background-color: #03b1c8;
 }
 
-ul {  
-  padding-top: 100px;
-  list-style: none;
+.seccion {
+  width: 100%;
+  height: auto;
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f8f8f8;
 }
+ul {
+  margin-top: 100px;
+}
+#character-list {
+  border-color: #03b1c8;
+  flex-wrap: wrap;
+}
+li {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
+  width: 100%;
+  max-width: 350px;
+  padding: 15px;
+  border: 2px solid #03b1c8; 
+  border-radius: 15px; 
+  background-color: #f0f8ff; 
+  margin-bottom: 20px;
+  
+} 
+img {
+  width: 100px; 
+  height: auto;
+  border-radius: 15px;
+  border: 2px solid #60fbbf; 
+}
+
+
 
 
 
